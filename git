@@ -1,0 +1,134 @@
+git prompt bash
+git installation check files and folder
+find .profile for it
+posh git
+
+# create repository
+git init
+
+
+# git configuration
+git config user.name "Alexey"
+git config user.email some_email@dom.ru
+
+
+# config type
+--local (default)
+./project/.git/config
+
+--system
+/etc/gitconfig
+
+--global
+~/.gitconfig
+
+# check current config (all)
+git config --list
+
+# check current global config
+git config --list --global
+
+# unset local config settings
+git config --unset user.name
+git config --unset user.email
+git config --remove-section user
+
+
+
+# help
+
+git config -h
+
+# help
+git help config
+
+# less help
+/ regular search
+n next value
+shift + n previous value
+q quit
+
+
+# edit config
+git config --global -e
+git config --global --edit
+
+# change editor
+git config --global core.editor 'path_to_editor and don't forget about launch key (check at doc)'
+
+# create alias
+git config --global alias.c 'my_command'
+
+# create alias for few commands
+git alias.c '!git something; git something'
+
+## also best practice - alias on shell level
+## robby russel github example
+
+# Carriege return / line feed
+core.autocrlf
+ - true (Windows)
+ - input (only upload)
+ - false
+
+
+
+## file .gitattributes
+  3 ## location = project folder
+  4 ## <project>/.git/info/attributes
+  5 
+  6 #
+  7 git config --global core.attributesFile ~/.gitattributes
+  8 
+  9 #
+ 10 git help attributes
+ 11 
+ 12 ## file .gitignore
+ 13 
+ 14 # check rule for .gitignore (empty means no match pattern)
+ 15 git check-ignore -v install/something
+ 16 
+ 17 #
+ 18 git config include.path ../project
+ 19 git config --add  include.path
+ 20 
+ 21 
+ 22 # create empty repository
+ 23 git init 
+ 24 
+ 25 # status git
+ 26 git status
+ 27 
+ 28 # commit changes
+ 29 ## first line less 50 symbols, next empty
+ 30 git commit
+ 31 
+ 32 #
+ 33 git config core.FileMode false
+ 34 
+ 35 #
+ 36 git update-index --chmod=+x some_file
+
+
+
+
+# show commit
+  3 git show commit_id
+  4 git show 
+  5 git show --pretty=fuller
+  6 # 
+  7 
+  8 #
+  9 git commit --author='Alexey <alex@mail.ru>' --date='...'
+ 10 
+ 11 
+ 12 # git don't work with empty folder
+ 13 # .gitkeep
+ 14 
+ 15 # index all current catalog
+ 16 git add .
+ 17 
+ 18 #
+ 19 
+ 20 XDG standard?
+~                      
