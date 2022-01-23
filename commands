@@ -1,4 +1,21 @@
 # создание локального репозитория в текущей папке
 git init .
 
+# текущий статус проекта
+git status
+
+# сделать все файлы staged
+git add *
+git add .
+
+# to unstage
+git rm --cached file
+
+# commit with comment
+git commit -m "Initial commit"
+
 # 
+git restore --staged file
+
+#
+git reset HEAD file
