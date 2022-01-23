@@ -12,3 +12,6 @@ v3
 untracked
 staged
 copy in local repository
+
+# просмотр файла в windows
+type file.txt
