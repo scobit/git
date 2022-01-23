@@ -33,6 +33,57 @@ git log
 git log -1
 git log -1 -p
 
+# проверка текущей ветки
+git branch
+
+# создание ветки
+git branch BranchName
+
+# перейти на ветку
+git checkout BranchName
+
+# удаление ветки (should be on master at this mooment)
+git branch -d BranchName 
+
+# ???
+git checkout -b fix_error
+
+#
+git merge BranchName
+
+#
+git branch -D fix_error
+
+#
+git checkout hash
+
+#
+git checkout master
+
+#
+git commit ammend
+
+#
+git reset --hard HEAD~2
+
+#
+git reset --soft HEAD~3
+
+#
+git push --set-upstream origin fix_error
+
+#
+github - create pull request
+
+#
+github - merge pull request
+
+#
+diff settings split 
+
+# удаление удалённой ветки 
+git push origin --delete fix_error
+
 #
 git checkout -- file 
 
