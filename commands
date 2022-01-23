@@ -1,5 +1,6 @@
 # создание локального репозитория в текущей папке
 git init .
+git init myapp
 
 # текущий статус проекта
 git status
@@ -48,4 +49,9 @@ logs/
 # клонирование удалённого репозитория
 git clone https://etc
 
+#
+git remote -v
+
+#
+git remote set-url origin https://etc
 
