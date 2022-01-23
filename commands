@@ -19,3 +19,26 @@ git restore --staged file
 
 #
 git reset HEAD file
+
+# send local repository to remote repository
+git push
+
+#
+git log
+git log -1
+git log -1 -p
+
+#
+git checkout -- file 
+
+#
+git diff --staged
+
+# настройка исключений
+# gitignore should be added to repository
+vim .gitignore
+file
+*.log
+logs/
+
+# 
