@@ -18,3 +18,7 @@ type file.txt
 
 ssh-keygen
 
+
+in windows:
+
+git bash
