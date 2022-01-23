@@ -20,4 +20,10 @@ vim .gitconfig
 # файл конфигурации локального репозитория
 vim .git
 
-# 
+# общая справка
+git --help
+
+# мини обучение
+git help tutorial
+
+
