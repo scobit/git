@@ -1,0 +1,6 @@
+# установка на debian
+sudo apt-get install git
+
+# установка RedHat
+sudo yum install git
+
