@@ -13,13 +13,13 @@ git add *
 git add .
 
 # to unstage
-git rm --cached file
+git rm --cached FileName
 
-# commit with comment
+# commit with comment (-m means message)
 git commit -m "Initial commit"
 
-# 
-git restore --staged file
+# восстановить изменённый файл из предыдущего stage ???
+git restore --staged FileName
 
 #
 git reset HEAD file
@@ -48,20 +48,17 @@ git checkout BranchName
 # удаление ветки (should be on master at this mooment)
 git branch -d BranchName 
 
-# ???
-git checkout -b fix_error
+# создать новую ветку и переключиться на неё
+git checkout -b BranchName
 
-#
+# объединение веток (находясь в мастер, сделаем слияние с BranchName)
 git merge BranchName
 
 #
 git branch -D fix_error
 
-#
-git checkout hash
-
-#
-git checkout master
+# перейти на другую ветку 
+git checkout BranchName
 
 #
 git commit ammend
