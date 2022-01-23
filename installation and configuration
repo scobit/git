@@ -4,3 +4,15 @@ sudo apt-get install git
 # установка RedHat
 sudo yum install git
 
+# проверить версию
+git --version
+
+# установка имени и почты
+git config --global user.name "Alexey Ilin"
+git config --global user.email "alexey.ilin@gmail.com"
+
+# проверка текущей конфигурации
+git config -l 
+
+# ручное редактирование конфигурации в файле
+vim .gitconfig
