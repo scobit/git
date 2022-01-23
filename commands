@@ -23,6 +23,10 @@ git reset HEAD file
 # send local repository to remote repository
 git push
 
+# 
+git push origin
+
+
 #
 git log
 git log -1
@@ -41,4 +45,7 @@ file
 *.log
 logs/
 
-# 
+# клонирование удалённого репозитория
+git clone https://etc
+
+
