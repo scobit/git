@@ -12,13 +12,19 @@ git status
 git add *
 git add .
 
-# to unstage
+# удаление файла из индекса
 git rm --cached FileName
 
 # commit with comment (-m means message)
 git commit -m "Initial commit"
 
-# восстановить изменённый файл из предыдущего stage ???
+# commit with index
+git commit -am "message"
+
+# откатывает изменения в файле на состояние предыдущего коммита
+git restore FileName
+
+# откатывает изменения в файле на уровне индекса
 git restore --staged FileName
 
 #
@@ -31,9 +37,13 @@ git push
 git push origin
 
 
-#
+# отображение комитов
 git log
+
+# отображение последжнего комита
 git log -1
+
+# отображение последнего комита с подробным выводом
 git log -1 -p
 
 # проверка текущей ветки
@@ -87,8 +97,11 @@ git push origin --delete fix_error
 #
 git checkout -- file 
 
-#
-git diff --staged
+# отображене изменений с момента последнего коммита
+git diff FileName
+
+# отображене изменений с момента последенго комита, когда файл уже проиндесирован
+git diff --staged FileName
 
 # настройка исключений
 # gitignore should be added to repository
@@ -118,4 +131,11 @@ git push
 # забрать последние изменения с удалённого репозитория
 git pull
 
+# отображени информации о комите
+git show CommitHash
 
+# переименование или перемещение файла с одновременным индексированием
+git mv FileName NewFileName
+
+# удаление файла с одновременным индексированием
+git rm FileName 
