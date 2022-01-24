@@ -49,6 +49,10 @@ git log -1 -p
 # проверка текущей ветки
 git branch
 
+
+# отображение всех веток
+git branch -a
+
 # создание ветки
 git branch BranchName
 
