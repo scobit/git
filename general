@@ -1,5 +1,9 @@
 git - это распределённая система контроля версий
 
+VCS - version contol system, could be:
+centralized
+distributed
+
 
 git построен на этапах фиксации 
 
