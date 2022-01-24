@@ -4,6 +4,7 @@ VCS - version contol system, could be:
 centralized
 distributed
 
+стадии файла - Untracked -> Staged -> Commited -> Modified -> Staged -> Commited
 
 git построен на этапах фиксации 
 
