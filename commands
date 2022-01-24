@@ -106,3 +106,8 @@ git remote -v
 #
 git remote set-url origin https://etc
 
+# привязка локального репозитория к удалённому
+git remote add origin git@github.com:scobit/app.git
+
+# залить локальный репозиторий на удалённый
+git push -u origin master
