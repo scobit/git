@@ -30,4 +30,9 @@ git --help
 # мини обучение
 git help tutorial
 
+# 3 уровня конфигурации git
+1 покрывает всех пользователей системы - git config --system
+2 относится к настройкам конкреткного пользователя системы - git config --global
+3 относится к текущему репозиторию - git config or git config --local
+
 
