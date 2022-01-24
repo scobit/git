@@ -111,3 +111,11 @@ git remote add origin git@github.com:scobit/app.git
 
 # залить локальный репозиторий на удалённый (-u means upstream)
 git push -u origin master
+
+# в следующий раз можно уже просто выполнить 
+git push
+
+# забрать последние изменения с удалённого репозитория
+git pull
+
+
