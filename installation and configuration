@@ -11,6 +11,10 @@ git --version
 git config --global user.name "Alexey Ilin"
 git config --global user.email "alexey.ilin@gmail.com"
 
+# отображение текущего имени и почты
+git config --global user.name
+git config --global user.email
+
 # проверка текущей конфигурации
 git config -l 
 
