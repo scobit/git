@@ -105,10 +105,14 @@ git diff --staged FileName
 
 # настройка исключений
 # gitignore should be added to repository
+# - means comment in file
+# gitignore works with regular expressions
 vim .gitignore
 file
 *.log
 logs/
+*.log[sqwe]
+__python__
 
 # клонирование удалённого репозитория
 git clone https://etc
