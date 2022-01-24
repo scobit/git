@@ -4,6 +4,12 @@ VCS - version contol system, could be:
 centralized
 distributed
 
+git может работать как в линейном процессе так и с ветвлениями.
+
+в git есть специтальный указатель - HEAD - по этой метке git понимает в каком состоянии должен находиться проект (текущий коммит и ветка)
+
+HEAD -> branch -> commit
+
 стадии файла - Untracked -> Staged -> Commited -> Modified -> Staged -> Commited
 
 git построен на этапах фиксации 
